@@ -60,27 +60,27 @@
 
         EN {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans     &trans         &trans                &trans                 &trans                                                                                          &kp F11  &kp F12           &kp F10            &kp F1  &kp F2
+&kp GRAVE  &kp NUMBER_1   &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4  &kp N5                                                              &kp NUMBER_6  &kp N7   &kp N8            &kp N9             &kp N0  &kp EQUAL
+&trans     &kp SEMICOLON  &kp W                 &kp O                  &kp X         &kp SQT                                                             &kp J         &kp K    &kp R             &kp C              &kp V   &kp MINUS
+&trans     &kp I          &kp S                 &kp E                  &kp A         &kp U                                                               &kp P         &kp H    &kp T             &kp N              &kp L   &kp SLASH
+&trans     &kp Z          &kp Q                 &kp COMMA              &kp Y         &kp PERIOD  &trans  &trans  &trans    &trans     &trans     &trans  &kp B         &kp D    &kp G             &kp M              &kp F   &kp NON_US_BACKSLASH
+&mo 4      &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                    &trans  &trans  &tog 3    &kp ENTER  &kp SPACE  &trans                &trans   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &tog 4
             >;
         };
 
         RU {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans            &trans         &trans                                                                              &trans  &trans  &trans  &trans               &trans
+&trans   &trans  &trans            &trans         &trans      &trans                                                       &trans     &trans  &trans  &trans  &trans               &trans
+&kp SQT  &kp A   &kp S             &kp J          &kp Q       &kp W                                                        &mt O I    &kp R   &kp H   &kp G   &kp P                &trans
+&trans   &kp B   &kp C             &kp T          &kp F       &kp E                                                        &kp X      &kp D   &kp N   &kp Y   &kp K                &trans
+&trans   &kp Z   &kp LEFT_BRACKET  &kp SEMICOLON  &kp PERIOD  &kp SLASH  &trans  &trans  &trans    &trans  &trans  &trans  &kp COMMA  &kp L   &kp U   &kp V   &mt RIGHT_BRACKET M  &trans
+&trans   &trans  &trans            &trans         &trans                 &trans  &trans  &trans    &trans  &trans  &trans             &trans  &trans  &trans  &trans               &trans
             >;
         };
 
-        QUERTY {
+        DEFAULT {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |  F1   |  F2 |  F3 |  F4  |  F5  |                                                               |  F6   |  F7   |  F8  |   F9  |  F10 |
             // |  =    |  1  |  2  |  3   |  4   |  5   |                                                 |  6   |   7   |   8   |  9   |   0   |   -  |
@@ -99,7 +99,7 @@
             >;
         };
 
-        lower_layer {
+        LOWER {
             bindings = <
 &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT  &kp C_PP                                                                           &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP   &none            &kp PAUSE_BREAK
 &trans        &none         &none       &none       &none      &kp HOME                                                     &kp LPAR   &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp PSCRN
