@@ -327,12 +327,12 @@
 
         GAMING {
             bindings = <
-&kp N0   &kp NUMBER_6    &kp N7  &kp N8        &kp N9                                                                                        &kp F1  &kp F2    &kp F3  &kp F4   &kp F5
-&kp END  &kp NUMBER_4    &kp N2  &kp NUMBER_1  &kp NUMBER_3  &kp N5                                                                 &kp F6   &kp F7  &kp F8    &kp F9  &kp F10  &kp F11
-&kp TAB  &kp T           &kp Q   &kp W         &kp E         &kp R                                                                  &kp F12  &none   &none     &none   &none    &none
-&trans   &kp LEFT_SHIFT  &kp A   &kp S         &kp D         &kp F                                                                  &none    &none   &none     &none   &none    &none
-&kp DEL  &kp LCTRL       &kp Z   &kp X         &kp C         &kp V   &kp LALT   &kp HOME   &to 0    &kp LGUI  &kp RCTRL  &kp RSHFT  &none    &none   &none     &none   &none    &kp PG_UP
-&kp ESC  &kp G           &kp B   &kp I         &kp M                 &kp ENTER  &kp SPACE  &mo 5    &kp RALT  &kp RET    &kp SPACE           &kp UP  &kp DOWN  &none   &none    &kp PG_DN
+&kp N0   &kp NUMBER_6  &kp N7  &kp N8        &kp N9                                                                                    &kp F1  &kp F2    &kp F3  &kp F4   &kp F5
+&kp END  &kp NUMBER_1  &kp N2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                                             &kp F6   &kp F7  &kp F8    &kp F9  &kp F10  &kp F11
+&kp TAB  &kp T         &kp Q   &kp W         &kp E         &kp R                                                              &kp F12  &none   &none     &none   &none    &none
+&trans   &kp O         &kp A   &kp S         &kp D         &kp F                                                              &none    &none   &none     &none   &none    &none
+&kp DEL  &kp L         &kp Z   &kp X         &kp C         &kp V   &kp N  &kp ENTER  &to 0    &kp LGUI  &kp RCTRL  &kp RSHFT  &none    &none   &none     &none   &none    &kp PG_UP
+&kp ESC  &kp G         &kp B   &kp I         &kp M                 &kp K  &kp SPACE  &mo 5    &kp RALT  &kp RET    &kp SPACE           &kp UP  &kp DOWN  &none   &none    &kp PG_DN
             >;
         };
 
@@ -340,8 +340,8 @@
             bindings = <
 &trans  &trans  &trans          &trans          &trans                                                                       &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &trans          &trans     &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N   &kp Y           &kp UP_ARROW    &kp U      &kp O                                                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp K   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp L                                                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp Y           &kp UP_ARROW    &kp U      &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp H           &kp J           &kp P      &trans  &trans  &trans  &to 0     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &trans          &trans             &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
