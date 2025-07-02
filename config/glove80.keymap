@@ -240,13 +240,7 @@
         MACRO_ALT_SHIFT: MACRO_ALT_SIHFT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kt LEFT_ALT>,
-                <&macro_tap>,
-                <&kp LEFT_SHIFT>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
+            bindings = <&macro_tap>, <&kp LS(LALT)>;
 
             label = "MACRO_ALT_SIHFT";
             wait-ms = <70>;
@@ -266,11 +260,7 @@
         MACRO_TO_EN: MACRO_TO_EN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&to 0>,
-                <&macro_tap>,
-                <&kp LA(LSHFT) &kp LEFT_ALT>;
+            bindings = <&macro_tap>, <&to 0>, <&macro_tap>, <&kp LS(LALT)>;
 
             label = "MACRO_TO_EN";
             wait-ms = <20>;
@@ -293,12 +283,12 @@
 
         EN {
             bindings = <
-&trans          &trans         &trans                &trans                 &trans                                                                                                                  &kp F5  &kp F12           &kp F10            &kp F1  &kp F2
-&kp GRAVE       &kp NUMBER_1   &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4    &kp N5                                                                                    &kp NUMBER_6  &kp N7  &kp N8            &kp N9             &kp N0  &kp EQUAL
-&kp TAB         &kp SEMICOLON  &kp W                 &kp O                  &kp X           &kp SQT                                                                                   &kp J         &kp K   &kp R             &kp C              &kp V   &kp MINUS
-&MACRO_ALT_TAB  &kp I          &kp S                 &kp E                  &kp A           &kp U                                                                                     &kp P         &kp H   &kp T             &kp N              &kp L   &kp SLASH
-&kp TAB         &kp Z          &kp Q                 &kp COMMA              &kp Y           &kp PERIOD  &kp LEFT_WIN   &BEH_WIN_R_D 0 0  &kp ESCAPE     &trans     &trans     &trans  &kp B         &kp D   &kp G             &kp M              &kp F   &kp NON_US_BACKSLASH
-&mo 3           &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &BEH_TO_RU 0 0              &kp BACKSPACE  &mt LSHFT DELETE  &lt 2 ENTER    &kp ENTER  &kp SPACE  &trans                &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &mo 3
+&trans          &trans         &trans                &trans                 &trans                                                                                                                       &kp F5  &kp F12           &kp F10            &kp F1  &kp F2
+&kp GRAVE       &kp NUMBER_1   &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4    &kp N5                                                                                         &kp NUMBER_6  &kp N7  &kp N8            &kp N9             &kp N0  &kp EQUAL
+&kp TAB         &kp SEMICOLON  &kp W                 &kp O                  &kp X           &kp SQT                                                                                        &kp J         &kp K   &kp R             &kp C              &kp V   &kp MINUS
+&MACRO_ALT_TAB  &kp I          &kp S                 &kp E                  &kp A           &kp U                                                                                          &kp P         &kp H   &kp T             &kp N              &kp L   &kp SLASH
+&kp TAB         &kp Z          &kp Q                 &kp COMMA              &kp Y           &kp PERIOD  &kp LEFT_WIN   &BEH_WIN_R_D 0 0  &mt ESCAPE ENTER    &trans     &trans     &trans  &kp B         &kp D   &kp G             &kp M              &kp F   &kp NON_US_BACKSLASH
+&mo 3           &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &BEH_TO_RU 0 0              &kp BACKSPACE  &mt LSHFT DELETE  &tog 2              &kp ENTER  &kp SPACE  &trans                &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &mo 3
             >;
         };
 
@@ -315,12 +305,12 @@
 
         LOWER {
             bindings = <
-&trans  &trans         &kp C_PREV     &kp C_NEXT     &kp C_PP                                                                            &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP   &none            &kp PAUSE_BREAK
-&trans  &trans         &trans         &trans         &trans         &trans                                                    &kp LPAR   &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp PSCRN
-&trans  &trans         &trans         &kp UP         &trans         &trans                                                    &kp RPAR   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp SLCK
-&trans  &MACRO_CTRL_A  &kp LEFT       &kp DOWN       &kp RIGHT      &trans                                                    &kp PRCNT  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
-&trans  &MACRO_CTRL_Z  &MACRO_CTRL_X  &MACRO_CTRL_C  &MACRO_CTRL_V  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp COMMA  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
-&trans  &trans         &trans         &kp PG_UP      &kp PAGE_DOWN          &trans  &trans  &trans    &trans  &trans  &trans             &kp KP_N0   &kp KP_N0     &kp KP_DOT     &kp KP_ENTER     &trans
+&trans  &trans         &kp C_PREV     &kp C_NEXT     &kp C_PP                                                                                   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP   &none            &kp PAUSE_BREAK
+&trans  &trans         &trans         &trans         &trans         &trans                                                           &kp LPAR   &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp PSCRN
+&trans  &trans         &trans         &kp UP         &trans         &trans                                                           &kp RPAR   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp SLCK
+&trans  &MACRO_CTRL_A  &kp LEFT       &kp DOWN       &kp RIGHT      &MACRO_CTRL_F                                                    &kp PRCNT  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
+&trans  &MACRO_CTRL_Z  &MACRO_CTRL_X  &MACRO_CTRL_C  &MACRO_CTRL_V  &trans         &trans  &trans  &to 4     &trans  &trans  &trans  &kp COMMA  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
+&trans  &trans         &trans         &kp PG_UP      &kp PAGE_DOWN                 &trans  &trans  &trans    &trans  &trans  &trans             &kp KP_N0   &kp KP_N0     &kp KP_DOT     &kp KP_ENTER     &trans
             >;
         };
 
@@ -337,12 +327,12 @@
 
         GAMING {
             bindings = <
-&kp N0   &kp NUMBER_6    &kp N7  &kp N8        &kp N9                                                                                            &kp F1  &kp F2    &kp F3  &kp F4   &kp F5
-&kp END  &kp NUMBER_4    &kp N2  &kp NUMBER_1  &kp NUMBER_3  &kp N5                                                                     &kp F6   &kp F7  &kp F8    &kp F9  &kp F10  &kp F11
-&kp TAB  &kp T           &kp Q   &kp W         &kp E         &kp R                                                                      &kp F12  &none   &none     &none   &none    &none
-&trans   &kp LEFT_SHIFT  &kp A   &kp S         &kp D         &kp F                                                                      &none    &none   &none     &none   &none    &none
-&kp DEL  &kp LCTRL       &kp Z   &kp X         &kp C         &kp V   &kp LALT   &kp HOME   &layer_td    &kp LGUI  &kp RCTRL  &kp RSHFT  &none    &none   &none     &none   &none    &kp PG_UP
-&kp ESC  &kp G           &kp B   &kp I         &kp M                 &kp ENTER  &kp SPACE  &tog 5       &kp RALT  &kp RET    &kp SPACE           &kp UP  &kp DOWN  &none   &none    &kp PG_DN
+&kp N0   &kp NUMBER_6    &kp N7  &kp N8        &kp N9                                                                                         &kp F1  &kp F2    &kp F3  &kp F4   &kp F5
+&kp END  &kp NUMBER_4    &kp N2  &kp NUMBER_1  &kp NUMBER_3  &kp N5                                                                  &kp F6   &kp F7  &kp F8    &kp F9  &kp F10  &kp F11
+&kp TAB  &kp T           &kp Q   &kp W         &kp E         &kp R                                                                   &kp F12  &none   &none     &none   &none    &none
+&trans   &kp LEFT_SHIFT  &kp A   &kp S         &kp D         &kp F                                                                   &none    &none   &none     &none   &none    &none
+&kp DEL  &kp LCTRL       &kp Z   &kp X         &kp C         &kp V   &kp LALT   &kp HOME   &to 0     &kp LGUI  &kp RCTRL  &kp RSHFT  &none    &none   &none     &none   &none    &kp PG_UP
+&kp ESC  &kp G           &kp B   &kp I         &kp M                 &kp ENTER  &kp SPACE  &tog 5    &kp RALT  &kp RET    &kp SPACE           &kp UP  &kp DOWN  &none   &none    &kp PG_DN
             >;
         };
 
