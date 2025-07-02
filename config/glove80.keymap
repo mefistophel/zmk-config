@@ -61,7 +61,7 @@
         BEH_TOG_LAYER_KEY: BEH_TOG_LAYER_KEY {
             compatible = "zmk,behavior-hold-tap";
             label = "BEH_TOG_LAYER_KEY";
-            bindings = <&to>, <&kp>;
+            bindings = <&tog>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <120>;
@@ -249,18 +249,14 @@
                 <&kp LEFT_ALT>;
 
             label = "MACRO_ALT_SIHFT";
-            wait-ms = <80>;
-            tap-ms = <40>;
+            wait-ms = <70>;
+            tap-ms = <70>;
         };
 
         MACRO_TO_RU: MACRO_TO_RU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&to 1>,
-                <&macro_tap>,
-                <&kp LA(LSHFT) &kp LEFT_ALT>;
+            bindings = <&macro_tap>, <&to 1>, <&macro_tap>, <&kp LA(LSHFT)>;
 
             label = "MACRO_TO_RU";
             wait-ms = <20>;
