@@ -302,7 +302,7 @@
 &kp TAB         &kp SEMICOLON  &kp W                 &kp O                  &kp X           &kp SQT                                                                                                  &kp J         &kp K   &kp R             &kp C              &kp V   &kp MINUS
 &MACRO_ALT_TAB  &kp I          &kp S                 &kp E                  &kp A           &kp U                                                                                                    &kp P         &kp H   &kp T             &kp N              &kp L   &kp SLASH
 &kp TAB         &kp Z          &kp Q                 &kp COMMA              &kp Y           &kp PERIOD  &kp LEFT_WIN   &BEH_WIN_R_D 0 0  &kp ESCAPE                    &trans     &trans     &trans  &kp B         &kp D   &kp G             &kp M              &kp F   &kp NON_US_BACKSLASH
-&mo 3           &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &BEH_TO_RU 0 0              &kp BACKSPACE  &mt LSHFT DELETE  &BEH_TOG_LAYER_KEY 2 ENTER    &kp ENTER  &kp SPACE  &trans                &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &tog 3
+&mo 3           &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &BEH_TO_RU 0 0              &kp BACKSPACE  &mt LSHFT DELETE  &BEH_TOG_LAYER_KEY 2 ENTER    &kp ENTER  &kp SPACE  &trans                &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &mo 3
             >;
         };
 
@@ -335,7 +335,7 @@
 &none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                     &none  &none  &none  &none  &none  &none
 &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                     &none  &none  &none  &none  &none  &bootloader
 &sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none           &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
-&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB    &none  &none  &none         &none  &none  &none  &none  &none
+&to 0        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB    &none  &none  &none         &none  &none  &none  &none  &to 0
             >;
         };
 
