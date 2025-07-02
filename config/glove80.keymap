@@ -24,7 +24,7 @@
         layer_td: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&mo 3>, <&to 3>;
         };
 
@@ -293,12 +293,12 @@
 
         EN {
             bindings = <
-&trans          &trans         &trans                &trans                 &trans                                                                                                                                 &kp F5  &kp F12           &kp F10            &kp F1  &kp F2
-&kp GRAVE       &kp NUMBER_1   &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4    &kp N5                                                                                                   &kp NUMBER_6  &kp N7  &kp N8            &kp N9             &kp N0  &kp EQUAL
-&kp TAB         &kp SEMICOLON  &kp W                 &kp O                  &kp X           &kp SQT                                                                                                  &kp J         &kp K   &kp R             &kp C              &kp V   &kp MINUS
-&MACRO_ALT_TAB  &kp I          &kp S                 &kp E                  &kp A           &kp U                                                                                                    &kp P         &kp H   &kp T             &kp N              &kp L   &kp SLASH
-&kp TAB         &kp Z          &kp Q                 &kp COMMA              &kp Y           &kp PERIOD  &kp LEFT_WIN   &BEH_WIN_R_D 0 0  &kp ESCAPE                    &trans     &trans     &trans  &kp B         &kp D   &kp G             &kp M              &kp F   &kp NON_US_BACKSLASH
-&mo 3           &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &BEH_TO_RU 0 0              &kp BACKSPACE  &mt LSHFT DELETE  &BEH_TOG_LAYER_KEY 2 ENTER    &kp ENTER  &kp SPACE  &trans                &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &mo 3
+&trans          &trans         &trans                &trans                 &trans                                                                                                                  &kp F5  &kp F12           &kp F10            &kp F1  &kp F2
+&kp GRAVE       &kp NUMBER_1   &kp NUMBER_2          &kp NUMBER_3           &kp NUMBER_4    &kp N5                                                                                    &kp NUMBER_6  &kp N7  &kp N8            &kp N9             &kp N0  &kp EQUAL
+&kp TAB         &kp SEMICOLON  &kp W                 &kp O                  &kp X           &kp SQT                                                                                   &kp J         &kp K   &kp R             &kp C              &kp V   &kp MINUS
+&MACRO_ALT_TAB  &kp I          &kp S                 &kp E                  &kp A           &kp U                                                                                     &kp P         &kp H   &kp T             &kp N              &kp L   &kp SLASH
+&kp TAB         &kp Z          &kp Q                 &kp COMMA              &kp Y           &kp PERIOD  &kp LEFT_WIN   &BEH_WIN_R_D 0 0  &kp ESCAPE     &trans     &trans     &trans  &kp B         &kp D   &kp G             &kp M              &kp F   &kp NON_US_BACKSLASH
+&mo 3           &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &BEH_TO_RU 0 0              &kp BACKSPACE  &mt LSHFT DELETE  &lt 2 ENTER    &kp ENTER  &kp SPACE  &trans                &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &mo 3
             >;
         };
 
