@@ -288,7 +288,7 @@
 &kp TAB         &kp SEMICOLON  &kp W                 &kp O                  &kp X           &kp SQT                                                                                        &kp J         &kp K   &kp R             &kp C              &kp V   &kp MINUS
 &MACRO_ALT_TAB  &kp I          &kp S                 &kp E                  &kp A           &kp U                                                                                          &kp P         &kp H   &kp T             &kp N              &kp L   &kp SLASH
 &kp TAB         &kp Z          &kp Q                 &kp COMMA              &kp Y           &kp PERIOD  &kp LEFT_WIN   &BEH_WIN_R_D 0 0  &mt ESCAPE ENTER    &trans     &trans     &trans  &kp B         &kp D   &kp G             &kp M              &kp F   &kp NON_US_BACKSLASH
-&mo 3           &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &BEH_TO_RU 0 0              &kp BACKSPACE  &mt LSHFT DELETE  &tog 2              &kp ENTER  &kp SPACE  &trans                &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &mo 3
+&mo 3           &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &BEH_TO_RU 0 0              &kp BACKSPACE  &mt LSHFT DELETE  &mo 2               &kp ENTER  &kp SPACE  &trans                &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &mo 3
             >;
         };
 
@@ -327,12 +327,12 @@
 
         GAMING {
             bindings = <
-&kp N0   &kp NUMBER_6    &kp N7  &kp N8        &kp N9                                                                                         &kp F1  &kp F2    &kp F3  &kp F4   &kp F5
-&kp END  &kp NUMBER_4    &kp N2  &kp NUMBER_1  &kp NUMBER_3  &kp N5                                                                  &kp F6   &kp F7  &kp F8    &kp F9  &kp F10  &kp F11
-&kp TAB  &kp T           &kp Q   &kp W         &kp E         &kp R                                                                   &kp F12  &none   &none     &none   &none    &none
-&trans   &kp LEFT_SHIFT  &kp A   &kp S         &kp D         &kp F                                                                   &none    &none   &none     &none   &none    &none
-&kp DEL  &kp LCTRL       &kp Z   &kp X         &kp C         &kp V   &kp LALT   &kp HOME   &to 0     &kp LGUI  &kp RCTRL  &kp RSHFT  &none    &none   &none     &none   &none    &kp PG_UP
-&kp ESC  &kp G           &kp B   &kp I         &kp M                 &kp ENTER  &kp SPACE  &tog 5    &kp RALT  &kp RET    &kp SPACE           &kp UP  &kp DOWN  &none   &none    &kp PG_DN
+&kp N0   &kp NUMBER_6    &kp N7  &kp N8        &kp N9                                                                                        &kp F1  &kp F2    &kp F3  &kp F4   &kp F5
+&kp END  &kp NUMBER_4    &kp N2  &kp NUMBER_1  &kp NUMBER_3  &kp N5                                                                 &kp F6   &kp F7  &kp F8    &kp F9  &kp F10  &kp F11
+&kp TAB  &kp T           &kp Q   &kp W         &kp E         &kp R                                                                  &kp F12  &none   &none     &none   &none    &none
+&trans   &kp LEFT_SHIFT  &kp A   &kp S         &kp D         &kp F                                                                  &none    &none   &none     &none   &none    &none
+&kp DEL  &kp LCTRL       &kp Z   &kp X         &kp C         &kp V   &kp LALT   &kp HOME   &to 0    &kp LGUI  &kp RCTRL  &kp RSHFT  &none    &none   &none     &none   &none    &kp PG_UP
+&kp ESC  &kp G           &kp B   &kp I         &kp M                 &kp ENTER  &kp SPACE  &mo 5    &kp RALT  &kp RET    &kp SPACE           &kp UP  &kp DOWN  &none   &none    &kp PG_DN
             >;
         };
 
@@ -342,7 +342,7 @@
 &trans  &trans  &trans          &trans          &trans     &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp N   &kp Y           &kp UP_ARROW    &kp U      &kp O                                                     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp K   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp L                                                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp H           &kp J           &kp P      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp H           &kp J           &kp P      &trans  &trans  &trans  &to 0     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &trans          &trans             &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
