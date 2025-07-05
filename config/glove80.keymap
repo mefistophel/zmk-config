@@ -66,6 +66,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <120>;
         };
+
+        BEH_HOLD_TAP: BEH_HOLD_TAP {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BEH_HOLD_TAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -283,23 +293,23 @@
 
         EN {
             bindings = <
-&trans          &trans         &trans          &trans            &trans                                                                                                                       &kp F5            &kp F12            &kp F10               &kp F1                 &kp F2
-&kp GRAVE       &kp NUMBER_1   &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4    &kp N5                                                                                         &kp NUMBER_6  &kp N7            &kp N8             &kp N9                &kp N0                 &kp TILDE
-&kp TAB         &kp SEMICOLON  &kp W           &kp O             &kp X           &kp SQT                                                                                        &kp J         &kp K             &kp R              &kp C                 &kp V                  &kp EQUAL
-&MACRO_ALT_TAB  &kp I          &mt LEFT_ALT S  &mt LSHFT E       &mt LCTRL A     &kp U                                                                                          &kp P         &kp H             &kp T              &kp N                 &kp L                  &kp MINUS
-&kp TAB         &kp Z          &kp Q           &kp COMMA         &kp Y           &kp PERIOD  &kp LEFT_WIN   &BEH_WIN_R_D 0 0  &mt ESCAPE ENTER    &trans     &trans     &trans  &kp B         &kp D             &kp G              &kp M                 &kp F                  &kp SLASH
-&mo 3           &trans         &kp LESS_THAN   &kp GREATER_THAN  &BEH_TO_RU 0 0              &kp BACKSPACE  &mt LSHFT DELETE  &mo 2               &kp ENTER  &kp SPACE  &trans                &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &lt 3 NON_US_BACKSLASH
+&trans          &trans         &trans                    &trans                 &trans                                                                                                                              &kp F5            &kp F12            &kp F10               &kp F1                 &lt 2 F2
+&kp GRAVE       &kp NUMBER_1   &kp NUMBER_2              &kp NUMBER_3           &kp NUMBER_4           &kp N5                                                                                         &kp NUMBER_6  &kp N7            &kp N8             &kp N9                &kp N0                 &kp TILDE
+&kp TAB         &kp SEMICOLON  &kp W                     &kp O                  &kp X                  &kp SQT                                                                                        &kp J         &kp K             &kp R              &kp C                 &kp V                  &kp EQUAL
+&MACRO_ALT_TAB  &kp I          &BEH_HOLD_TAP LEFT_ALT S  &BEH_HOLD_TAP LSHFT E  &BEH_HOLD_TAP LCTRL A  &kp U                                                                                          &kp P         &kp H             &kp T              &kp N                 &kp L                  &kp MINUS
+&kp TAB         &kp Z          &kp Q                     &kp COMMA              &kp Y                  &kp PERIOD  &kp LEFT_WIN   &BEH_WIN_R_D 0 0  &mt ESCAPE ENTER    &trans     &trans     &trans  &kp B         &kp D             &kp G              &kp M                 &kp F                  &kp SLASH
+&mo 3           &trans         &kp LESS_THAN             &kp GREATER_THAN       &BEH_TO_RU 0 0                     &kp BACKSPACE  &mt LSHFT DELETE  &mo 2               &kp ENTER  &kp SPACE  &trans                &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
             >;
         };
 
         RU {
             bindings = <
-&trans   &trans  &trans            &trans         &trans                                                                                  &trans  &trans  &trans  &trans               &trans
-&trans   &trans  &trans            &trans         &trans          &trans                                                       &trans     &trans  &trans  &trans  &trans               &trans
-&kp SQT  &kp A   &kp S             &kp J          &kp Q           &kp W                                                        &mt O I    &kp R   &kp H   &kp G   &kp P                &trans
-&trans   &kp B   &mt LALT C        &mt LSHFT T    &mt LCTRL F     &kp E                                                        &kp X      &kp D   &kp N   &kp Y   &kp K                &trans
-&trans   &kp Z   &kp LEFT_BRACKET  &kp SEMICOLON  &kp PERIOD      &kp SLASH  &trans  &trans  &trans    &trans  &trans  &trans  &kp COMMA  &kp L   &kp U   &kp V   &mt RIGHT_BRACKET M  &trans
-&trans   &trans  &trans            &trans         &BEH_TO_EN 0 0             &trans  &trans  &trans    &trans  &trans  &trans             &trans  &trans  &trans  &trans               &trans
+&trans   &trans  &trans                &trans                 &trans                                                                                         &trans  &trans  &trans  &trans               &trans
+&trans   &trans  &trans                &trans                 &trans                 &trans                                                       &trans     &trans  &trans  &trans  &trans               &trans
+&kp SQT  &kp A   &kp S                 &kp J                  &kp Q                  &kp W                                                        &mt O I    &kp R   &kp H   &kp G   &kp P                &trans
+&trans   &kp B   &BEH_HOLD_TAP LALT C  &BEH_HOLD_TAP LSHFT T  &BEH_HOLD_TAP LCTRL F  &kp E                                                        &kp X      &kp D   &kp N   &kp Y   &kp K                &trans
+&trans   &kp Z   &kp LEFT_BRACKET      &kp SEMICOLON          &kp PERIOD             &kp SLASH  &trans  &trans  &trans    &trans  &trans  &trans  &kp COMMA  &kp L   &kp U   &kp V   &mt RIGHT_BRACKET M  &trans
+&trans   &trans  &trans                &trans                 &BEH_TO_EN 0 0                    &trans  &trans  &trans    &trans  &trans  &trans             &trans  &trans  &trans  &trans               &trans
             >;
         };
 
