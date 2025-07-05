@@ -304,12 +304,12 @@
 
         RU {
             bindings = <
-&trans   &trans  &trans                &trans                 &trans                                                                                         &trans  &trans  &trans  &trans               &trans
+&trans   &trans  &trans                &trans                 &trans                                                                                         &trans  &trans  &trans  &trans               &mo 3
 &trans   &trans  &trans                &trans                 &trans                 &trans                                                       &trans     &trans  &trans  &trans  &trans               &trans
 &kp SQT  &kp A   &kp S                 &kp J                  &kp Q                  &kp W                                                        &mt O I    &kp R   &kp H   &kp G   &kp P                &trans
 &trans   &kp B   &BEH_HOLD_TAP LALT C  &BEH_HOLD_TAP LSHFT T  &BEH_HOLD_TAP LCTRL F  &kp E                                                        &kp X      &kp D   &kp N   &kp Y   &kp K                &trans
 &trans   &kp Z   &kp LEFT_BRACKET      &kp SEMICOLON          &kp PERIOD             &kp SLASH  &trans  &trans  &trans    &trans  &trans  &trans  &kp COMMA  &kp L   &kp U   &kp V   &mt RIGHT_BRACKET M  &kp QMARK
-&trans   &trans  &trans                &trans                 &BEH_TO_EN 0 0                    &trans  &trans  &trans    &trans  &trans  &trans             &trans  &trans  &trans  &trans               &trans
+&mo 3    &trans  &trans                &trans                 &BEH_TO_EN 0 0                    &trans  &trans  &trans    &trans  &trans  &trans             &trans  &trans  &trans  &trans               &trans
             >;
         };
 
